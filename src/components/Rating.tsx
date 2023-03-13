@@ -6,20 +6,22 @@ export function Rating() {
 
     <div className={styles.panel}>
 
-      <img src="/icon-star.svg"></img>
+      <img className={styles.star} src="/icon-star.svg"></img>
 
-      <h1>How did we do?</h1>
+      <h1 className={styles.title}>How did we do?</h1>
 
-      <p>
+      <p className={styles.description}>
         Please let us know how we did with your support request. All feedback is 
         appreciated to help us improve our offering!
       </p>
 
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>4</button>
-      <button>5</button>
+      <div className={styles.group}>
+        <button className={styles.rating}>1</button>
+        <button className={styles.rating}>2</button>
+        <button className={styles.rating}>3</button>
+        <button className={styles.rating}>4</button>
+        <button className={styles.rating}>5</button>
+      </div>
 
       <button>Submit</button>
     </div>
