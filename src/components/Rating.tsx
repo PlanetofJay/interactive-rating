@@ -23,7 +23,7 @@ export function Rating() {
         <button className={styles.rating}>5</button>
       </div>
 
-      <button>Submit</button>
+      <button className={styles.submit}>Submit</button>
     </div>
 
   );

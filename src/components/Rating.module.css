@@ -23,10 +23,15 @@
   font-size: 13px;
 }
 
+.group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
 .rating {
   background: #282e38;
   border-radius: 100%;
-  padding: 10px;
   width: 50px;
   height: 50px;
 }
@@ -35,7 +40,19 @@
   background: #7d8796;
 }
 
-.group {
-  display: flex;
-  justify-content: space-between;
+.rating:focus {
+  background: #fb7b19;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  border-radius: 40px;
+  color: #fff; 
+  background: #fb7b19;
+}
+
+.submit:hover {
+  color: #fb7b19;
+  background: #fff; 
 }
