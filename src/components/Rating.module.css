@@ -1,3 +1,7 @@
+:root {
+  --primary: #fb7b19;
+}
+
 .panel {
   background-color: #1e242e;
   padding: 40px;
@@ -5,6 +9,15 @@
   width: 300px;
   height: 300px;
   text-align: left;
+}
+
+.thank-you-panel {
+  background-color: #1e242e;
+  padding: 40px;
+  border-radius: 40px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
 }
 
 .star {
@@ -41,7 +54,7 @@
 }
 
 .rating:focus {
-  background: #fb7b19;
+  background: var(--primary);
 }
 
 .submit {
@@ -49,10 +62,21 @@
   padding: 10px;
   border-radius: 40px;
   color: #fff; 
-  background: #fb7b19;
+  background: var(--primary);
 }
 
 .submit:hover {
-  color: #fb7b19;
+  color: var(--primary);
   background: #fff; 
+}
+
+.selected {
+  color: var(--primary);
+  background: #2e344e;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 12px;
+  border-radius: 40px;
+  display: inline-block;
 }
